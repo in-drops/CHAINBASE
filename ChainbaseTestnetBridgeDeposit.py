@@ -40,7 +40,7 @@ def worker(account: Account) -> None:
 
 def activity(bot: Bot):
 
-    amount_input = random.uniform(0.05, 0.1)
+    amount_input = random.uniform(0.01, 0.09)
     excel_report = Excel(bot.account, file='ChainbaseActivity.xlsx')
     chainbase_onchain = Onchain(bot.account, Chains.CHAINBASE_TESTNET)
     balance_before = chainbase_onchain.get_balance().ether
