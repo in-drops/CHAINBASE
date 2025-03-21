@@ -97,7 +97,7 @@ def activity(bot: Bot):
             excel_report.set_cell('Address', f'{bot.account.address}')
             excel_report.set_date('Date')
             excel_report.set_cell(f'Sepolia Bridge', f'{deposit_amount:.5f}')
-            logger.success('Транзакция прошла успешно! Данные записаны в таблицу SoneiumActivity.xlsx')
+            logger.success('Транзакция прошла успешно! Данные записаны в таблицу ChainbaseActivity.xlsx')
             break
         random_sleep(5, 10)
     else:
